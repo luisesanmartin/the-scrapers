@@ -40,25 +40,48 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
+
 </style>
 </head>
 <body>
 
 <div class="sidenav">
-  <a href="">Main page</a>
+  <a href="../">Main page</a>
   <p> </p>
   <p> </p>
-  <a href="charity_water/">Charity: Water</a>
-  <a href="msf/">Doctors without Borders</a>
-  <a href="ipa/">Innovations for Poverty Action</a>
+  <a href="">Charity: Water</a>
+  <a href="../msf/">Doctors without Borders</a>
+  <a href="../ipa/">Innovations for Poverty Action</a>
 </div>
 
 <div class="main">
-  <h2>The Scrapers</h2>
-  <p>This is an image example:</p>
-  <img src="images/dwight-800x800.jpeg" width="400" height="400">
-  <p>This is a paragraph example:</p>
-  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <h2>Charity: Water</h2>
+  <p></p>
+  <p>Word clouds of the reviews:</p>
+  <div class="row">
+    <div class="column">
+      <h4>Givewell</h4>
+      <img src="images/charity:_water_givewell.png" style="width:100%">
+    </div>
+    <div class="column">
+      <h4>Glassdoor</h4>
+      <img src="images/charity:_water_glassdoor.png" style="width:100%">
+    </div>
+  </div>
+
+  <p>Sentiments of the sentences of in the Givewell and Glassdoor reviews</p>
+  <img src="images/charity:_water.png">
+
 </div>
    
 </body>
