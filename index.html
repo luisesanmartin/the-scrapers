@@ -40,6 +40,16 @@ body {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
 </style>
 </head>
 <body>
@@ -55,10 +65,33 @@ body {
 
 <div class="main">
   <h2>The Scrapers</h2>
-  <p>This is an image example:</p>
-  <img src="images/dwight-800x800.jpeg" width="400" height="400">
-  <p>This is a paragraph example:</p>
-  <p>Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+  <p>This website summarizes our results.</p>
+  <h3>Discrepancies</h3>
+  <p>We analyzed the discrepancies between the pooled Glassdoor reviews
+  and the Givewell review. For each organization with a Givewell review
+  and a minimum of 10 Glassdoor reviews, we constructed a sentiment compound
+  score and the percentage of sentences with positive and negative sentiments.
+  Then, we got the difference between those three indicators from the pooled
+  Glassdoor reviews and from the Givewell review, for each organization.</p>
+  <p>The graph below summarizes such results. A positive score indicates
+  that the pooled Glassdoor reviews produce a higher result than the Givewell
+  review.</p>
+
+  <div class="row">
+    <div class="column">
+      <h4>Compound score</h4>
+      <img src="images/compund.png" style="width:100%">
+    </div>
+    <div class="column">
+      <h4>Positive sentences</h4>
+      <img src="images/positive.png" style="width:100%">
+    </div>
+    <div class="column">
+      <h4>Negative sentences</h4>
+      <img src="images/negative.png" style="width:100%">
+    </div>
+  </div>
+
 </div>
    
 </body>
