@@ -70,29 +70,29 @@ body {
 
   <h3>Does the information from Givewell and Glassdoor reviews tell the same story?</h3>
   <p>Short answer: They don't seem to.</p>
-  <p>We analyzed if the sentiments of the pooled Glassdoor reviews and the Givewell review were correlated. The graphs and the table below summarizes our results. Each axis indicates the proportion of sentences with a certain sentiment -- positive or negative, according to the graph. For the proportion of positive sentences graph, the y axis represents the rate of sentences with a positive sentiment in the pooled Glassdoor review and the x axis represents the rate of sentences with a positive sentiment in the Givewell review. The proportion of negative sentences graph has a similar interpretation, but for the rates of sentences with negative sentiment.</p>
+  <p>We analyzed if the sentiments of the pooled Glassdoor reviews and the Givewell review were correlated. The graphs and the table below summarizes our results. Each axis indicates the proportion of words with a certain sentiment -- positive or negative, according to the graph. For the proportion of positive words graph, the y axis represents the rate of words with a positive sentiment in the pooled Glassdoor review and the x axis represents the rate of words with a positive sentiment in the Givewell review. The proportion of negative words graph has a similar interpretation, but for the rates of words with negative sentiment.</p>
   
   <div class="row">
     <div class="column">
-      <h4>Rate of sentences with positive sentiment</h4>
+      <h4>Rate of words with positive sentiment</h4>
       <img src="images/scatter_pos.png" style="width:100%">
     </div>
     <div class="column">
-      <h4>Rate of sentences with negative sentences</h4>
+      <h4>Rate of words with negative sentiments</h4>
       <img src="images/scatter_neg.png" style="width:100%">
     </div>
   </div>
 
   <p>We also constructed a sentiment compound score which can be interpreted as a measurement of the general sentiments in a given text. It ranges from -1 to +1, where a value below zero indicates the text has a stronger negative than positive sentiment.</p>
 
-  <h4>Rate of sentences with positive sentiment</h4>
+  <h4>Compound score</h4>
   <img src="images/scatter_pos.png" style="width:50%">
 
-  <p>The graphs don't show a clear correlation between the sentiments of the reviews from both sources. More interestingly, after getting the correlations we can see they are not statiscally significant. Even though our very small sample (29 organizations) might be affecting significance here, the correlation between the percentage of negative sentences is very close to zero.</p>
+  <p>The graphs don't show a clear correlation between the sentiments of the reviews from both sources. More interestingly, after getting the correlations we can see they are not statiscally significant. Even though our very small sample (29 organizations) might be affecting significance here, the correlation between the percentage of negative words is very close to zero.</p>
 
   <h4>Correlations</h4>
-  <p><b>Rate of sentences with positive sentiment:</b> 0.17</p>
-  <p><b>Rate of sentences with negative sentiment:</b> 0.01</p>
+  <p><b>Rate of words with positive sentiment:</b> 0.17</p>
+  <p><b>Rate of words with negative sentiment:</b> 0.01</p>
   <p><b>Compound score:</b> 0.24</p>
   <p>None of them is statistically different than zero.</p>
 
@@ -101,9 +101,9 @@ body {
   <p>The graphs below summarizes such results by organization. A positive score indicates that the pooled Glassdoor reviews produce a higher result than the Givewell review.</p>
   <h4>Compound score</h4>
   <img src="images/compound.png" style="width:100%">
-  <h4>Positive sentences</h4>
+  <h4>Positive words</h4>
   <img src="images/positive.png" style="width:100%">
-  <h4>Negative sentences</h4>
+  <h4>Negative words</h4>
   <img src="images/negative.png" style="width:100%">
 
 </div>
