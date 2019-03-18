@@ -68,8 +68,9 @@ body {
   <h2>The Scrapers</h2>
   <p>This website summarizes our results.</p>
 
-    <h3>Correlations</h3>
-  <p>We analyzed if the sentiments of the pooled Glassdoor reviews and the Givewell review are correlated. The graphs and the table below summarizes our results. Each axis indicates the proportion of sentences with a certain sentiment -- positive or negative, according to the graph. For the proportion of positive sentences graph, the y axis represents the rate of sentences with a positive sentiment in the pooled Glassdoor review and the x axis represents the rate of sentences with a positive sentiment in the Givewell review. The proportion of negative sentences graph has a similar interpretation, but for the rates of sentences with negative sentiment.</p>
+  <h3>Does the information from Givewell and Glassdoor reviews tell the same story?</h3>
+  <p>Short answer: They don't seem to.</p>
+  <p>We analyzed if the sentiments of the pooled Glassdoor reviews and the Givewell review were correlated. The graphs and the table below summarizes our results. Each axis indicates the proportion of sentences with a certain sentiment -- positive or negative, according to the graph. For the proportion of positive sentences graph, the y axis represents the rate of sentences with a positive sentiment in the pooled Glassdoor review and the x axis represents the rate of sentences with a positive sentiment in the Givewell review. The proportion of negative sentences graph has a similar interpretation, but for the rates of sentences with negative sentiment.</p>
   
   <div class="row">
     <div class="column">
@@ -81,10 +82,39 @@ body {
       <img src="images/scatter_neg.png" style="width:100%">
     </div>
   </div>
-  
-  <h3>Discrepancies</h3>
-  <p>We analyzed the discrepancies between the pooled Glassdoor reviews and the Givewell review. For each organization with a Givewell review and a minimum of 10 Glassdoor reviews, we constructed a sentiment compound score and the percentage of sentences with positive and negative sentiments. Then, we got the difference between those three indicators from the pooled Glassdoor reviews and from the Givewell review, for each organization.</p>
-  <p>The graphs below summarizes such results. A positive score indicates that the pooled Glassdoor reviews produce a higher result than the Givewell review.</p>
+
+  <p>We also constructed a sentiment compound score which can be interpreted as a measurement of the general sentiments in a given text. It ranges from -1 to +1, where a value below zero indicates the text has a stronger negative than positive sentiment.</p>
+
+  <div class="row">
+    <div class="column">
+      <h4>Rate of sentences with positive sentiment</h4>
+      <img src="images/scatter_pos.png" style="width:100%">
+    </div>
+    <div class="column">
+    </div>
+  </div>
+
+  <p>The graphs don't show a clear correlation between the sentiments of the reviews from both sources. More interestingly, after getting the correlations we can see they are not statiscally significant. Even though our very small sample (29 organizations) might be affecting significance here, the correlation between the percentage of negative sentences is very close to zero.</p>
+
+    <div class="row">
+      <h4>Correlations</h4>
+    <div class="column">
+      <h5>Rate of sentences with positive sentiment</h5>
+      <p>0.17</p>
+    </div>
+    <div class="column">
+      <h5>Rate of sentences with negative sentiment</h5>
+      <p>0.01</p>
+    </div>
+    <div class="column">
+      <h5>Compound score</h5>
+      <p>0.24</p>
+    </div>
+  </div>
+
+  <h3>Which organizations have the biggest review discrepancies?</h3>
+  <p>We also analyzed the discrepancies between the pooled Glassdoor reviews and the Givewell review.  Then, we got the difference between those three indicators from the pooled Glassdoor reviews and from the Givewell review, for each organization.</p>
+  <p>The graphs below summarizes such results by organization. A positive score indicates that the pooled Glassdoor reviews produce a higher result than the Givewell review.</p>
   <h4>Compound score</h4>
   <img src="images/compound.png" style="width:100%">
   <h4>Positive sentences</h4>
